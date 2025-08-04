@@ -93,7 +93,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-sm p-6">
               <h2 className="text-2xl font-semibold text-gray-900 mb-6">Leadership Team</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {COMPANY_DATA.team.map((member, index) => (
+                {COMPANY_DATA.team.slice(0, 3).map((member, index) => (
                   <div key={index} className="text-center">
                     <div className="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                       <span className="text-blue-600 font-semibold text-lg">
@@ -103,7 +103,7 @@ export default function Home() {
                     <h3 className="font-semibold text-gray-900">{member.name}</h3>
                     <p className="text-blue-600 text-sm font-medium mb-2">{member.role}</p>
                     <p className="text-gray-600 text-sm mb-2">{member.experience}</p>
-                    <p className="text-xs text-gray-500">{member.specialties.join(', ')}</p>
+                    <p className="text-xs text-gray-500">{member.specialties?.join(', ')}</p>
                   </div>
                 ))}
               </div>

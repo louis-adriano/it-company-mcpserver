@@ -35,7 +35,11 @@ export function KnowledgeTester() {
     "What technologies do you use?",
     "How can I contact you?",
     "Tell me about the team",
-    "What are your prices?"
+    "What are your prices?",
+    "Tell me about your AWS partnership",
+    "What are your office locations?",
+    "What certifications does your team have?",
+    "Do you offer emergency support?"
   ]
 
   return (
